@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d2b;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Containers */
+.auth-container, .dashboard-container {
+    background: #1a1a40;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 140, 255, 0.3);
+    width: 380px;
+    margin: auto;
+    margin-top: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.auth-container:hover, .dashboard-container:hover {
+    transform: scale(1.02);
+}
+
+/* Input Fields */
+.auth-container input {
+    width: 92%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #303060;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #23234d;
+    color: white;
+    transition: 0.3s;
+}
+
+.auth-container input:focus {
+    border-color: #008cff;
+    outline: none;
+}
+
+/* Buttons */
+.auth-container button, 
+.dashboard-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #008cff, #4a00e0);
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.auth-container button:hover, 
+.dashboard-container button:hover {
+    background: linear-gradient(135deg, #4a00e0, #6200ea);
+    transform: scale(1.05);
+}
+
+/* Logout Button */
+#logout-btn {
+    background: linear-gradient(135deg, #ff1744, #d50000);
+}
+
+#logout-btn:hover {
+    background: linear-gradient(135deg, #d50000, #ff5252);
+}
+
+/* Room Buttons */
+.room-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    background: #23234d;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.room-btn:hover {
+    background: linear-gradient(135deg, #008cff, #4a00e0);
+    transform: scale(1.05);
+}
+
+/* Message Text */
+#message {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ff5252;
+    font-weight: bold;
+}
